@@ -5,14 +5,14 @@ I am assuming that you are having a runnning hyperledger network
 ## To Install chaincode run ##
 `peer chaincode install -n pankajusercc -v 0 -p "Directory where you cloned dummyuser.go"`
 
-## To instansiate chaincode ##
+## To Instansiate chaincode ##
 `peer chaincode upgrade -n pankajusercc -v 0 -c '{"Args":[]}' -o 127.0.0.1:7050 -C "your channel name here"`
 
 
-## To add a user ##
+## To Add a user ##
 
 `peer chaincode invoke -n mycc -c '{"Args":["addUser","1234","{\"first_name\":\"pankaj\",\"last_name\":\"cheema\",\"roll\":23 } "]}' -o 127.0.0.1:7050 -C "your channel name here"`
 
-## To get the user ##
+## To Get the user ##
 
 `peer chaincode query -n mycc -c '{"Args":["getUser","1234"]}'  -C ch1{"first_name":"pankaj","last_name":"cheema","roll":23}`
