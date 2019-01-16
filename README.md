@@ -15,4 +15,4 @@ I am assuming that you are having a runnning hyperledger network
 
 ## To Get the user ##
 
-`peer chaincode query -n mycc -c '{"Args":["getUser","1234"]}'  -C ch1{"first_name":"pankaj","last_name":"cheema","roll":23}`
+`peer chaincode query -n mycc -c '{"Args":["getUser","1234"]}'  -C ch1`
